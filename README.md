@@ -7,7 +7,7 @@ It utilises [testcontainers](https://www.testcontainers.org/), manages the conta
 
 ## Port Mapping and Ports Exposed by Container
 
-When the container is created the mapped ports are provided. This tells testcontainers which ports it shall expose for the container. testcontainers exposes random ports and maps these to the internal ports of the container.
+When the container is created the mapped ports are provided. This tells testcontainers which ports it shall expose for the container. [testcontainers exposes random ports and maps these to the internal ports of the container](https://www.testcontainers.org/features/networking/).
 For example - the base class maps port 55555 (SMF plain). This may be exposed as any port. The base class logs the SMF port used and output will look similar to this:
 ```
 INFO: Started Solace PubSub+ Docker Container, available on host [localhost], SMF port [32872]
