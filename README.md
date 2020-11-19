@@ -1,6 +1,6 @@
 # pubsubplus-container-junit
 
-When developing event driven Java services for Solace PubSub+, at some stage you want to move from unit testing Java code to testing services against broker.
+When developing event driven Java services for Solace PubSub+, at some stage you want to move from unit testing Java code to testing services against a broker.
 
 This repository demonstrates a base class for JUnit tests that launches a new PubSub+ instance in docker for use in tests.
 It utilises [testcontainers](https://www.testcontainers.org/), manages the container life cycle manually as there is no testcontainers wrapper (yet) for PubSub+ and follows the [singleton container pattern](https://www.testcontainers.org/test_framework_integration/manual_lifecycle_control/).
